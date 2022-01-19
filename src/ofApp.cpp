@@ -108,7 +108,7 @@ void ofApp::draw(){
 	for (string s : holder1) { // Prints date data in cvs from vector
 		s = wrapString(s, 500);
 		font3.drawString(s, 260, k);
-		k += 50;
+		k += 40;
 		if (counter1 == 100) {
 			break;
 		}
@@ -116,9 +116,9 @@ void ofApp::draw(){
 	}
 
 	for (string t : holder2) { // Prints tweet data in cvs from vector
-		t = wrapString(t, 1800);
+		t = wrapString(t, 5000);
 		font3.drawString(t, 370, j);
-		j += 50;
+		j += 40;
 		if (counter2 == 100) {
 			break;
 		}
@@ -173,7 +173,8 @@ void ofApp::mousePressed(int x, int y, int button){
 		cout << "Button 4 Clicked" << endl;
 		holder1.clear(); // Clears Data
 		holder2.clear(); // Clears Data
-
+		count = 0; // Sets count to 0
+		countText = "Paris Total"; // Sets countText to "Politics Paris"
 		for (int i = 0; i < tweet.size(); i++) {
 			string str1 = tweet[i];
 
@@ -190,7 +191,8 @@ void ofApp::mousePressed(int x, int y, int button){
 		cout << "Button 5 Clicked" << endl;
 		holder1.clear(); // Clears Data
 		holder2.clear(); // Clears Data
-
+		count = 0; // Sets count to 0
+		countText = "DreamWorks Total"; // Sets countText to "DreamWorks Total"
 		for (int i = 0; i < tweet.size(); i++) {
 			string str1 = tweet[i];
 
@@ -207,7 +209,8 @@ void ofApp::mousePressed(int x, int y, int button){
 		cout << "Button 6 Clicked" << endl;
 		holder1.clear(); // Clears Data
 		holder2.clear(); // Clears Data
-
+		count = 0; // Sets count to 0
+		countText = "Uber Total"; // Sets countText to "Uber Total"
 		for (int i = 0; i < tweet.size(); i++) {
 			string str1 = tweet[i];
 
@@ -224,7 +227,8 @@ void ofApp::mousePressed(int x, int y, int button){
 		cout << "Button 7 Clicked" << endl;
 		holder1.clear(); // Clears Data
 		holder2.clear(); // Clears Data
-
+		count = 0; // Sets count to 0
+		countText = "Shrek Total"; // Sets countText to "Shrek Total"
 		for (int i = 0; i < tweet.size(); i++) { // If current string has "Shrek" will push back both date and tweet
 			string str1 = tweet[i];
 
@@ -241,7 +245,8 @@ void ofApp::mousePressed(int x, int y, int button){
 		cout << "Button 8 Clicked" << endl;
 		holder1.clear(); // Clears Data
 		holder2.clear(); // Clears Data
-
+		count = 0; // Sets count to 0
+		countText = "Juice Total"; // Sets countText to "Juice Total"
 		for (int i = 0; i < tweet.size(); i++) { // If current string has "Juice" will push back both date and tweet
 			string str1 = tweet[i];
 
@@ -258,7 +263,8 @@ void ofApp::mousePressed(int x, int y, int button){
 		cout << "Button 9 Clicked" << endl;
 		holder1.clear(); // Clears Data
 		holder2.clear(); // Clears Data
-
+		count = 0; // Sets count to 0
+		countText = "Burger Total"; // Sets countText to "Burger Total"
 		for (int i = 0; i < tweet.size(); i++) { // If current string has "Burger" will push back both date and tweet
 			string str1 = tweet[i];
 
@@ -275,7 +281,8 @@ void ofApp::mousePressed(int x, int y, int button){
 		cout << "Button 10 Clicked" << endl;
 		holder1.clear(); // Clears Data
 		holder2.clear(); // Clears Data
-
+		count = 0; // Sets count to 0
+		countText = "Cool Total"; // Sets countText to "Cool Total"
 		for (int i = 0; i < tweet.size(); i++) { // If current string has "Cool" will push back both date and tweet
 			string str1 = tweet[i];
 
